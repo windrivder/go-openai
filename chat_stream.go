@@ -33,6 +33,7 @@ type ChatCompletionStreamResponse struct {
 	SystemFingerprint   string                       `json:"system_fingerprint"`
 	PromptAnnotations   []PromptAnnotation           `json:"prompt_annotations,omitempty"`
 	PromptFilterResults []PromptFilterResult         `json:"prompt_filter_results,omitempty"`
+	Usage               Usage                        `json:"usage"`
 }
 
 // ChatCompletionStream
